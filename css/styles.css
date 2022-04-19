@@ -1,0 +1,339 @@
+*{margin: 0;padding: 0;}
+
+#grilla {
+    display: grid;
+    grid-template-areas:
+    "headerNav headerNav headerNav"
+    "menu-nav menu-nav menu-nav"
+    "imagenIndex resumen imagenOferta"
+    "piePagina piePagina piePagina";
+    grid-template-rows: 100px 100px 2fr 75px;
+    grid-template-columns: 20% auto 15%;
+    height: 100vh;
+    margin: 0;
+    gap: 10px;
+    background-image: url(../img/store-g1cc1fbfc7_1920.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}   
+.pagesStyle{
+    background-image: url(../img/store-g1cc1fbfc7_1920.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#headerNav {
+grid-area: headerNav;
+text-align: center;
+margin-top: 30px;
+padding-top: 15px;
+background-image: linear-gradient(to top, blue, white)
+    }
+    #headerNav{
+        animation-duration: 5s;
+        animation-name: aparecer;
+        animation-iteration-count: infinite;
+        }
+        @keyframes aparecer {
+        0% {
+        opacity: 0;
+        }
+        100% {
+        opacity: 1;
+        }
+    }
+
+#menu-nav{
+    grid-area: menu-nav;
+    }
+#resumen {
+grid-area: resumen;
+text-align: center;
+background-color: rgb(195, 195, 231);
+padding: 30px;
+}
+.tituloSeccion{
+background-color: rgb(183, 183, 201);
+text-align: center; 
+margin: 20px;
+padding: 10px;   
+}
+.tituloStyle{
+    padding: 10px;
+    margin: 10px;
+    font-size: 45px;
+}
+.parrafoStyle1{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.parrafoStyle2{
+    margin-top: 20px;
+    font-size: 20px;
+}
+#imagenIndex {
+grid-area: imagenIndex;
+text-align: center;
+}
+
+#imagenOferta {
+grid-area: imagenOferta;
+}
+
+#piePagina {
+    grid-area: piePagina;
+}
+
+.footerStyle{
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin-top: 15%;
+}
+.card1{
+    margin: 20px;
+}
+.card2{
+    margin: 20px;
+}
+.card3{
+    margin: 20px;
+}
+.card4{
+    margin: 20px;
+}
+.iframeStyle{
+    margin: 5% 20%;
+}
+#contactoFormulario{
+    margin: 5% 25%;
+    background-color: blanchedalmond;
+}
+/* #menu-nav{ 
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row nowrap;
+    list-style: none;
+    font-size: 32px;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: black;
+} */
+
+/* Menu Cambios con Boostrap */
+#ubacionStyle{
+    margin: 50px;
+    text-align: center;
+}
+#servicioStyle{
+    margin: 50px;
+}
+.menuStyle{
+    margin: 25px;
+    width: 95%;
+    padding-left: 27%;
+}   
+.menuStyle:hover{
+    font-size: 20px;
+}
+.menuPages{
+    padding-right: 22%;
+    margin: 25px;
+    width: 95%;
+}
+#productoStyle{
+    font-size: 2rem;
+    padding-bottom: 10px;
+}
+.imgLogo{
+    padding-left: 50%;
+}
+.cards{
+    display: flex;
+    margin: 10px;
+}
+.botonCarrito{
+    padding-bottom: 0 auto;
+}
+
+/* cambios Boostrap  */´
+
+
+#headerNav{
+    background-color: rgb(183, 183, 201);
+}
+
+.parallax{
+    background-image: url(../img/candies-g623ec2e50_1920.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#enlaceWhatsapp{
+    color: greenyellow;
+    font-size: 40px;
+    position: fixed;
+    bottom: 15%;
+    right: 10px
+}
+.enlaceStyle:hover{
+    font-size: 35px;
+}
+
+.enlaceStyle{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+#img-header{
+    margin-left: 45%;
+    width: 100px;
+}
+/* ANIMACIONES*/
+
+.tituloSeccion {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    animation-name: un_efecto;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 30s;
+    animation-delay: 1s;
+    margin-left: 35%;
+}     
+@keyframes un_efecto {
+    0%{ width: 100px; }
+    25%{ width: 300px; }
+    50%{ width: 200px;
+    background-color: red; }
+    75%{ width: 300px;}
+    100%{ width: 100px;
+    background-color:green;}
+}
+
+/* ---------------------- */
+
+@media (max-width: 767px){
+    #grilla{
+        display: flex;
+        flex-flow: column nowrap;
+    }
+.seccionProductos{
+    display: grid; 
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 18%;
+}
+.enlaceStyle{
+    font-size: 15px;
+}
+#cardStyle{
+    margin-left: 25%;
+}
+.iframeStyle{
+    margin: 5% 15%;
+    width: 350px;
+    height: 250px;
+}
+#resumen {
+    text-align: center;
+    background-color: rgb(195, 195, 231);
+    padding: 10px;
+    }
+.footerStyle{
+    margin-top: 10%;
+}
+#imagenIndex{
+    width: 200px;
+    height: 300px;
+    margin-left: 25%;
+        }       
+#imagenOferta{
+    width: 120px;
+    height: 200px;
+    margin: 2px;
+    margin-left: 33%;   
+}
+.iframeStyle{
+    margin: 5%;
+    }
+#img-header{
+    margin-left: 38%;
+    width: 100px;
+    }     
+.menuPages{
+text-align: center;
+}
+}
+
+@media (min-width: 768px) {
+    #menu-nav{ 
+        display: flex;
+        justify-content: space-around;
+        flex-flow: row nowrap;
+    }
+    .seccionProductos{
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);
+    }
+    #imagenIndex{
+        width: 130px;
+        height: 180px;
+        margin-left: 20px;
+        transform: translate(10px, 100px);
+    }
+    #imagenOferta{
+        width: 100px;
+        height: 180px;
+        transition: 5s;
+    }
+#imagenOferta:hover{
+    width: 140px;
+    height: 250px;
+    }
+} 
+
+    
+@media (min-width: 1024px) {
+    .seccionProductos{
+    grid-template-columns: repeat(3, 1fr);
+        }
+    #imagenIndex{
+    width: 175px;
+    height: 250px;
+    margin-left: 20px;
+        }       
+    /*#imagenOferta{
+    width: 135px;
+    height: 200px; 
+        }  */
+        #imagenOferta{
+            width: 100px;
+            height: 180px;
+            transition: 5s;
+        }
+    #imagenOferta:hover{
+        width: 140px;
+        height: 250px;
+        }
+        }
+
+@media (min-width: 1200px) {
+    .seccionProductos{
+    grid-template-columns: repeat(4, 1fr);
+        }
+        #imagenIndex{
+            width: 175px;
+            height: 250px;
+            margin-left: 20px;
+                }       
+        #imagenOferta{
+            width: 135px;
+            height: 200px;
+                }
+        }
+    
